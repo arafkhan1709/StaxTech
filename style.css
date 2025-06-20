@@ -1,0 +1,65 @@
+body {
+  background: url(calculatorbg.jpg) no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #1a2531;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+}
+
+#display {
+  width: 92%;
+  height: 60px;
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #dbbfb9;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 21px;
+}
+
+button {
+  height: 60px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.buttons .equalsto{
+  background-color: rgb(224, 196, 15);
+}
+.buttons .addition{
+  background-color: rgb(224, 196, 15);
+}
+.buttons .subtract{
+  background-color: rgb(224, 196, 15);
+}
+.buttons .clear{
+  background-color: rgb(224, 196, 15);
+}
+
+button:hover {
+  background: #555;
+}
+
+button:active {
+  background: #666;
+}
